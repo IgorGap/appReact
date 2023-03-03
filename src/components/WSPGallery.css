@@ -1,0 +1,107 @@
+*{
+  background-color: rgb(86, 87, 87);
+  color: rgb(253, 253, 253);
+}
+.galleryWrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: rgba(209, 204, 204, 0.8);
+  border: 2px solid rgb(146, 143, 143);
+  border: 2px solid rgb(51, 51, 52);
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+}
+.galleryWrap .single{
+  width: 165px;
+  cursor: pointer;
+  border: 2px solid rgb(34, 29, 29);
+}
+
+.galleryWrap .single img{
+  max-width: 100%;
+}
+
+.galleryWrap .single:hover{
+  transform: scale(1.10);
+}
+/* .galleryWrap .single .comments:hover{
+  transform: scale(1.04);
+} */
+.galleryWrap .single img:hover{
+  transform: scale(1.04);
+}
+
+.sliderWrap{
+  position: fixed;
+  top: 0; bottom: 0;left: 0;right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.8);
+}
+
+
+.sliderWrap .btnClose, .sliderWrap .btnPrev,.sliderWrap .btnNext{
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+
+  border: 2px solid rgb(254, 250, 250);
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.btnNext:hover, .btnPrev:hover, .btnClose:hover{
+  opacity: 1;
+
+}
+
+.sliderWrap .btnClose{
+  top: 40px;
+  right: 40px;
+}
+
+.sliderWrap .btnPrev{
+  top: 50%;
+  transform: translate(-50%);
+  left: 40px;
+}
+.sliderWrap .btnNext{
+  top: 50%;
+  transform: translate(-50%);
+  right: 40px;
+  
+}
+
+.fullScreenImage{
+  width: calc(100%-40px);
+  height: calc(100%-40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullScreenImage img{
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+.comments{
+  height: 100px;
+  word-wrap: break-word;
+  text-align: justify;
+  padding: 4px;
+  }
+
